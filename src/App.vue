@@ -5,24 +5,32 @@
      <div class="figure">
        <img src="../src/assets/icon-arrow-down.svg" alt="arrow down">
      </div>
-     
-   <!-- <div id="main-container">
-     <h2>Todo contenido</h2>
-   </div> -->
  </div>
+
+ <div class="main">
+    <Main/>
+   <!-- <div class="text-main">
+   </div> -->
+    <img class="image-egg" src="../src/assets/image/image-transform.jpg" alt="image-egg">
+    <img class="image-cup" src="../src/assets/image/image-stand-out.jpg" alt="cup">
+    <img class="image-cherry" src="../src/assets/image/image-graphic-design.jpg" alt="image-cherrys">
+    <img class="imagen-orange" src="../src/assets/image/image-photography.jpg" alt="image-orange">
+  </div>
+  
 </template>
+
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/header.vue';
-// import Main from './components/main.vue';
+import Main from './components/main.vue';
 // import Footer from './components/footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Header 
-    // Main, 
+    Header, 
+    Main 
     // Footer
   }
   // data() {
@@ -70,7 +78,22 @@ export default {
    justify-content: center;
 }
 
+.main{
+    margin-top: 22%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
+/* .text-main{
+  display: flex;
+  align-items: center;
+} */
+.image-egg{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
  
 
 </style>
