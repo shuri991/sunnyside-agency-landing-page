@@ -9,8 +9,6 @@
 
  <div class="main">
     <Main/>
-   <!-- <div class="text-main">
-   </div> -->
     <img class="image-egg" src="../src/assets/image/image-transform.jpg" alt="image-egg">
     <img class="image-cup" src="../src/assets/image/image-stand-out.jpg" alt="cup">
     <img class="image-cherry" src="../src/assets/image/image-graphic-design.jpg" alt="image-cherrys">
@@ -85,6 +83,9 @@ export default {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
+ .main img{
+   max-width: 100%;
+ }
 
 /* .text-main{
   display: flex;
@@ -93,6 +94,18 @@ export default {
 .image-egg{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+}
+.image-cup{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.image-cherry{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.imagen-orange{
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
  
 

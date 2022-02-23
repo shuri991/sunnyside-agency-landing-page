@@ -5,7 +5,6 @@
             <li>About</li>
             <li>Services</li>
             <li>Projects</li>
-            <!-- <li class="contact">Contact</li> -->
         </ul>
         <button class="contact">Contact</button>
     </div>
