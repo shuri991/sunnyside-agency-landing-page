@@ -22,7 +22,7 @@
 
     <div class="text-main3">
         <h2>Graphic design</h2> 
-        <p>
+        <p class="paragraph2">
           Great design makes you memorable. 
           We deliver artwork that underscores your brand message and 
           captures potential clients’ attention.
@@ -31,7 +31,7 @@
 
     <div class="text-main4">
          <h2>Photography</h2> 
-        <p>
+        <p class="paragraph2">
          Increase your credibility by getting the
          most stunning, high-quality photos that improve your business image.
         </p>
@@ -69,8 +69,10 @@ export default {
 
 .text-main3,
 .text-main4{
-    text-align: center;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .text-main3{
@@ -83,6 +85,17 @@ export default {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     position: relative;
+}
+
+.text-main3 h2,
+.text-main4 h2{
+ font-size: 1.5rem;
+ margin-bottom: 50px;
+}
+
+.paragraph2{
+    margin-bottom: 50px;
+    padding: 0px 50px;
 }
 
 </style>

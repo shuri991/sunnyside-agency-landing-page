@@ -14,6 +14,8 @@
     <img class="image-cherry" src="../src/assets/image/image-graphic-design.jpg" alt="image-cherrys">
     <img class="imagen-orange" src="../src/assets/image/image-photography.jpg" alt="image-orange">
   </div>
+
+  <Sectiontestimonial/>
   
 </template>
 
@@ -22,13 +24,15 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/header.vue';
 import Main from './components/main.vue';
+import Sectiontestimonial from './components/section-testimonial';
 // import Footer from './components/footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header, 
-    Main 
+    Main,
+    Sectiontestimonial 
     // Footer
   }
   // data() {
@@ -87,10 +91,6 @@ export default {
    max-width: 100%;
  }
 
-/* .text-main{
-  display: flex;
-  align-items: center;
-} */
 .image-egg{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
