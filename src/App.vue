@@ -16,24 +16,32 @@
   </div>
 
   <Sectiontestimonial/>
+
+  <div class="section-image">
+    <img class="gallery-image" src="../src/assets/image/image-gallery-milkbottles.jpg" alt="milkbottles">
+    <img class="gallery-image" src="../src/assets/image/image-gallery-orange.jpg" alt="orange">
+    <img class="gallery-image" src="../src/assets/image/image-gallery-cone.jpg" alt="cone">
+    <img class="gallery-image" src="../src/assets/image/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+  </div>
+
+  <Footer/>
   
 </template>
 
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/header.vue';
 import Main from './components/main.vue';
 import Sectiontestimonial from './components/section-testimonial';
-// import Footer from './components/footer.vue'
+import Footer from './components/footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header, 
     Main,
-    Sectiontestimonial 
-    // Footer
+    Sectiontestimonial, 
+    Footer
   }
   // data() {
   //   return {
@@ -107,6 +115,11 @@ export default {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
- 
 
+.section-image{
+  display: flex;
+}
+.gallery-image{
+  width: 25%;
+}
 </style>

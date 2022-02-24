@@ -1,6 +1,7 @@
 <template>
+    <img src="../assets/logo.svg" alt="">
     <div class="header">
-        <h2>sunnyside</h2>
+        
         <ul>
             <li>About</li>
             <li>Services</li>
@@ -32,9 +33,10 @@ export default {
     padding: 40px;
 }
 
-h2{
-    color: white;
-    width: 100%;
+img{
+    position: absolute;
+    margin: 30px;
+    width: 15%;
 }
 
 ul{
