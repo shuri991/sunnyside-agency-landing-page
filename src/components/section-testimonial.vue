@@ -2,7 +2,7 @@
     <h1>Client testimonials</h1>
   <div class="cards">
     <div class="card">
-        <img src="../assets/image-emily.jpg" alt="Picture">
+        <img class="card-image" src="../assets/image-emily.jpg" alt="Picture">
       <p class="paragraph1">We put our trust in Sunnyside and they delivered,
          making sure our needs were met and deadlines were always hit.
       </p> 
@@ -11,7 +11,7 @@
     </div>
 
     <div class="card">
-        <img src="../assets/image-thomas.jpg" alt="Picture">
+        <img class="card-image" src="../assets/image-thomas.jpg" alt="Picture">
       <p class="paragraph1">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s 
          success made it a satisfying and enjoyable experience.
       </p> 
@@ -20,7 +20,7 @@
     </div>
 
     <div class="card">
-        <img src="../assets/image-jennie.jpg" alt="Picture">
+        <img class="card-image" src="../assets/image-jennie.jpg" alt="Picture">
       <p class="paragraph1">Incredible end result! Our sales increased over 400% when we worked 
          with Sunnyside. Highly recommended!
       </p> 
@@ -63,6 +63,12 @@ h1{
   padding: 30px;
   text-align: center;
 }
+
+.card-image{
+    border-radius: 50%;
+    width: 100px;
+}
+
 .paragraph1{
   padding: 60px 0;
   line-height: 30px;
